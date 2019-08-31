@@ -108,7 +108,7 @@ namespace GoogleTranslateFreeApi
 		}
 
 		/// <param name="domain">A Domain name which will be used to execute requests</param>
-		public GoogleTranslator(string domain = "translate.google.com")
+		public GoogleTranslator(string domain = "translate.google.cn")
 		{
 			Address = new Uri($"https://{domain}/translate_a/single");
 			_generator = new GoogleKeyTokenGenerator();

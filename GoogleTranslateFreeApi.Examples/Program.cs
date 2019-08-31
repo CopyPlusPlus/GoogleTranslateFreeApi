@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 
 namespace GoogleTranslateFreeApi.Examples
 {
@@ -9,15 +10,24 @@ namespace GoogleTranslateFreeApi.Examples
 
 		static void Main(string[] args)
 		{
-			Language english = GoogleTranslator.GetLanguageByName("English"); // define language this way
-			Language russian = Language.Russian; // or even this way
-			Language french = GoogleTranslator.GetLanguageByISO("fr"); // you could also use ISO639 value
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
-			TranslationResult result = Translator.TranslateAsync("Hello. How are you?", english, russian).GetAwaiter().GetResult();
+            Language english = GoogleTranslator.GetLanguageByName("English"); // define language this way
+            Language russian = Language.Russian; // or even this way
+            Language french = GoogleTranslator.GetLanguageByISO("fr"); // you could also use ISO639 value
 
-			Console.WriteLine($"Result 1: {result.MergedTranslation}");
+            //TranslationResult result = Translator.TranslateAsync("Hello. How are you?", english, russian).GetAwaiter().GetResult();
 
-			TranslationResult result2 =
+            Language cn = Language.ChineseSimplified; // or even this way
+            TranslationResult result = Translator.TranslateAsync("Hello. How are you?", english, cn).GetAwaiter().GetResult();
+
+            Console.WriteLine($"Result 1: {result.MergedTranslation}");
+
+            TranslationResult result1 = Translator.TranslateAsync("今天是你的生日，我的中国！", cn, english).GetAwaiter().GetResult();
+
+            Console.WriteLine($"Result 1-1: {result1.MergedTranslation}");
+
+            TranslationResult result2 =
 				Translator.TranslateAsync(new TranslateItem("The quick brown fox jumps over the lazy dog. Brown fox"))
 					.GetAwaiter()
 					.GetResult();

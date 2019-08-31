@@ -1,9 +1,15 @@
 # GoogleTranslateFreeApi
 Api for free text translation using Google translate.
 
+这个项目是fork https://github.com/Grizley56/GoogleTranslateFreeApi 这个项目，我在原作者基础上，主要修改了以下几点：
+1.根据国内的情况，将翻译的服务器指向了国内
+2.将原框架支撑的.net standard1.1 修改为2.0
+3.更正了原作者中，支持中文翻译有错误的问题，在示例中添加了一个英译中，中译英的示例
+
+
 | 	                   |  	Badge		|
 | -------------------------|:------------------:|
-| **Target Framework**     | [![.Net Standard 1.1](https://img.shields.io/badge/.NET%20Standard-1.1-green.svg)](https://docs.microsoft.com/ru-ru/dotnet/standard/net-standard) |
+| **Target Framework**     | [![.Net Standard 2.0](https://img.shields.io/badge/.NET%20Standard-1.1-green.svg)](https://docs.microsoft.com/ru-ru/dotnet/standard/net-standard) |
 | **Nuget**		   | [![Nuget](https://img.shields.io/nuget/v/GoogleTranslateFreeApi.svg)](https://www.nuget.org/packages/GoogleTranslateFreeApi/)
 | **License** 		   | [![MIT](https://img.shields.io/github/license/Grizley56/GoogleTranslateFreeApi.svg)](https://opensource.org/licenses/MIT) |
 

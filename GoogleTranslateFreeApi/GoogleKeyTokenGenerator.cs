@@ -48,7 +48,7 @@ namespace GoogleTranslateFreeApi
 		/// <summary>
 		/// Address for sending requests
 		/// </summary>
-		protected readonly Uri Address = new Uri("https://translate.google.com");
+		protected readonly Uri Address = new Uri("https://translate.google.cn");
 
 		/// <summary>
 		/// 
