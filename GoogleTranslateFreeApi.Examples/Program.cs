@@ -47,6 +47,7 @@ namespace GoogleTranslateFreeApi.Examples
 			{
 				Console.WriteLine($"{noun.Phrase}: {string.Join(", ", noun.PhraseTranslations)}");
 			}
+			Console.ReadLine();
 		}
 
 		private struct TranslateItem : ITranslatable

@@ -1,18 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<Authors>Ilya Meyta</Authors>
-		<Company />
-		<Description>API for free text translation using Google translate</Description>
+		<Authors>Wadereye</Authors>
+		<Company>Relyto</Company>
+		<Description>通过一定的方式免费使用google api 翻译</Description>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageProjectUrl>https://github.com/Grizley56/GoogleTranslateFreeApi</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/Grizley56/GoogleTranslateFreeApi</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/wadereye/GoogleTranslateFreeApi</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/wadereye/GoogleTranslateFreeApi</RepositoryUrl>
 		<PackageTags>Translate GoogleTranslate Free Translator</PackageTags>
 		<NeutralLanguage>en</NeutralLanguage>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>1.1.1</Version>
-		<AssemblyVersion>1.1.1.0</AssemblyVersion>
-		<FileVersion>1.1.1.0</FileVersion>
+		<Version>1.2</Version>
+		<AssemblyVersion>1.2.0.0</AssemblyVersion>
+		<FileVersion>1.2.0.0</FileVersion>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageId>Wadereye.GoogleTranslateFreeApi</PackageId>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 	  <DocumentationFile>GoogleTranslateFreeApi.xml</DocumentationFile>
