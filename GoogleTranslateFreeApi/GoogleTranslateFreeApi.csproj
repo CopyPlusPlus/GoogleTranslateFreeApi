@@ -2,8 +2,8 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<Authors>Wadereye</Authors>
-		<Company>Relyto</Company>
-		<Description>May be Free Use  google api</Description>
+		<Company>Wadereye</Company>
+		<Description>MayBe Can Free Use  Google Api.</Description>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/wadereye/GoogleTranslateFreeApi</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/wadereye/GoogleTranslateFreeApi</RepositoryUrl>
