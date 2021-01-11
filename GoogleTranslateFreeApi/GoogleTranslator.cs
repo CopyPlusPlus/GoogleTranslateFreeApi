@@ -202,23 +202,33 @@ namespace GoogleTranslateFreeApi
 				};
 			}
 
-			string token = await _generator.GenerateAsync(originalText);
+			//string token = await _generator.GenerateAsync(originalText);
 
-			string postData = $"sl={fromLanguage.ISO639}&" +
-												$"tl={toLanguage.ISO639}&" +
-												$"hl=en&" +
-												$"q={Uri.EscapeDataString(originalText)}&" +
-												$"tk={token}&" +
-												"client=t&" +
-												"dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&" +
-												"ie=UTF-8&" +
-												"oe=UTF-8&" +
-												"otf=1&" +
-												"ssel=0&" +
-												"tsel=0&" +
-												"kc=7";
+			//string postData = $"sl={fromLanguage.ISO639}&" +
+			//									$"tl={toLanguage.ISO639}&" +
+			//									$"hl=en&" +
+			//									$"q={Uri.EscapeDataString(originalText)}&" +
+			//									$"tk={token}&" +
+			//									"client=t&" +
+			//									"dt=at&dt=bd&dt=ex&dt=ld&dt=md&dt=qca&dt=rw&dt=rm&dt=ss&dt=t&" +
+			//									"ie=UTF-8&" +
+			//									"oe=UTF-8&" +
+			//									"otf=1&" +
+			//									"ssel=0&" +
+			//									"tsel=0&" +
+			//									"kc=7";
 
-			string result;
+			string postData = $"sl=auto&" +
+                                                $"tl={toLanguage.ISO639}&" +
+                                                $"hl=en&" +
+                                                $"q={Uri.EscapeDataString(originalText)}&" +
+                                                 
+                                                "client=gtx&" +
+                                                "dt=t&" +
+                                                "ie=UTF-8&";
+
+
+            string result;
 
 			try
 			{

@@ -38,15 +38,15 @@ namespace GoogleTranslateFreeApi.Examples
 				Console.WriteLine($"Result 2.{i} = {part}");
 			}
 
-			TranslationResult result3 =
-				Translator.TranslateAsync("Run", english, Language.Dutch)
-					.GetAwaiter()
-					.GetResult();
+			//TranslationResult result3 =
+			//	Translator.TranslateAsync("Run", english, Language.Dutch)
+			//		.GetAwaiter()
+			//		.GetResult();
 
-			foreach (var noun in result3.ExtraTranslations.Noun)
-			{
-				Console.WriteLine($"{noun.Phrase}: {string.Join(", ", noun.PhraseTranslations)}");
-			}
+			//foreach (var noun in result3.ExtraTranslations.Noun)
+			//{
+			//	Console.WriteLine($"{noun.Phrase}: {string.Join(", ", noun.PhraseTranslations)}");
+			//}
 			Console.ReadLine();
 		}
 
